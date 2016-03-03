@@ -1,0 +1,66 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <in.debate.debate.views.ScaleImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@null"
+        android:background="#ffffdca0" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@android:drawable/screen_background_dark_transparent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Indian topogrophical issues are of great concern"
+            android:id="@+id/headLines"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:layout_marginRight="5dip" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="right">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton"
+                android:background="@drawable/like"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginBottom="5dip" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton2"
+                android:background="@drawable/comment"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginBottom="5dip" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton3"
+                android:background="@drawable/share"
+                android:layout_marginRight="5dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginBottom="5dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout><!-- From: file:/home/cfs/Desktop/Latest3/Debate/app/src/main/res/layout/row_staggered.xml -->

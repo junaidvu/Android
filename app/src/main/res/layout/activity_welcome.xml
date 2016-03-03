@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity"
+    android:background="@color/theme_color_pair"
+    android:animateLayoutChanges="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@color/theme_color"
+        android:id="@+id/welcome_top_layout"
+        android:animateLayoutChanges="true">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:foregroundGravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                android:id="@+id/imageView"
+                android:background="@drawable/debate" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Debate"
+                android:id="@+id/textView"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="30dip"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="65dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shout yourself"
+                android:id="@+id/textView2"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="12dip"
+                android:textColor="#ff777777"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="95dip" />
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:id="@+id/loader"
+            android:background="@drawable/loader"
+            android:layout_marginTop="20dip" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcome_form"
+        android:layout_below="@+id/welcome_top_layout"
+        android:gravity="center_vertical|center_horizontal"
+        android:animateLayoutChanges="true">
+
+        <EditText
+            android:layout_width="200dip"
+            android:layout_height="40dip"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:background="#ffffff"
+            android:layout_marginTop="20dip"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Email Address"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" />
+
+        <EditText
+            android:layout_width="200dip"
+            android:layout_height="40dip"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:background="#ffffff"
+            android:layout_marginTop="5dip"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Password"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" />
+
+        <Button
+            android:layout_width="200dip"
+            android:layout_height="40dip"
+            android:text="Sign In"
+            android:id="@+id/welcome_signin"
+            android:layout_marginTop="5dip"
+            android:textColor="@color/theme_color_pair"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@color/theme_color"
+            android:animateLayoutChanges="true"/>
+    </LinearLayout>
+</RelativeLayout>
